@@ -1,5 +1,6 @@
 # Projekt zaliczeniowy oparty o metode CPM
 
+
 ## Wstęp teoretyczny
 
 CPM (Critical Path Method czyli metoda ścieżki krytycznej) należy do grupy deterministycznych technik planowania sieciowego. Jej podstawę stanowi budowa szczególnego rodzaju grafu sieciowego (przedstawiającego czynności i zdarzenia składające się na projekt) i dokonywanie wyliczeń na podstawie tego grafu. Dzięki tym wyliczeniem uzyskujemy plan realizacji projektu. Ten specyficzny rodzaj grafu jest określany siecią zależności lub wykresem sieciowym. Sieć ta opiera się na dwupunktowych modelach sieciowych, czyli takich gdzie czynności są reprezentowane za pomocą łuków grafu, a zdarzenia za pomocą węzłów grafu. Metodę ścieżki krytycznej wykorzystuje się do planowania i kontroli projektów, gdzie znana jest technologia i powiązania organizacyjne. Do takich projektów można zaliczyć inwestycje budowlane, remontowe, projekty związane z produkcję jednostkową skomplikowanych wyrobów (np. samolotów).
@@ -32,4 +33,5 @@ Graficznie przedstawiane jest za pomocą koła podzielonego na ćwiartki:
 (zdarzenie) czynności A staje się węzłem początkowym czynności B,
 5. Jeżeli czynność X ma kilku poprzedników to końcowe węzły (zdarzenia) tych czynności są reprezentowane tylko przez jeden węzeł, który jest węzłem początkowym czynności X.
 6. Jeżeli czynność X jest poprzednikiem dla kilku czynności to końcowy węzeł czynności X jest węzłem początkowym dla tych czynności. 
+
 
