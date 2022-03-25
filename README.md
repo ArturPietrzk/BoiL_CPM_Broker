@@ -19,3 +19,17 @@ Graficznie przedstawiane jest za pomocą koła podzielonego na ćwiartki:
   
 ![czynnosc2](https://user-images.githubusercontent.com/72975469/160156482-e6b70ad9-e839-4a2d-9848-055fa0e6b4b8.png)
   
+- Zdarzają się sytuację, kiedy spotykamy się z czynnością, która nie wymaga zużywania ani czasu ani środków. Taka czynność nazywana jest czynnością pozorną i sluży do przedstawienia zależności między czynnościami:
+
+![czynnosc3](https://user-images.githubusercontent.com/72975469/160157380-7032534f-43da-46cb-9bdb-1fe34e5e00bf.png)
+
+## Reguły tworzenia sieci
+
+1. Zdarzenie początkowe nie ma czynności poprzedzających,
+2. Zdarzenie końcowe nie ma czynności następujących,
+3. Dwa kolejne zdarzenia mogą być połączone tylko jedną czynnością,
+4. Jeżeli czynność A jest bezpośrednim poprzednikiem czynności B to węzeł końcowy
+(zdarzenie) czynności A staje się węzłem początkowym czynności B,
+5. Jeżeli czynność X ma kilku poprzedników to końcowe węzły (zdarzenia) tych czynności są reprezentowane tylko przez jeden węzeł, który jest węzłem początkowym czynności X.
+6. Jeżeli czynność X jest poprzednikiem dla kilku czynności to końcowy węzeł czynności X jest węzłem początkowym dla tych czynności. 
+
