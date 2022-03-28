@@ -35,3 +35,8 @@ Graficznie przedstawiane jest za pomocą koła podzielonego na ćwiartki:
 6. Jeżeli czynność X jest poprzednikiem dla kilku czynności to końcowy węzeł czynności X jest węzłem początkowym dla tych czynności. 
 
 
+## Działanie programu:
+
+![Zrzut ekranu 2022-03-28 123326](https://user-images.githubusercontent.com/72975469/160380187-05f891c6-3edc-4f99-b48f-fe0c9e82c56a.png)
+
+
