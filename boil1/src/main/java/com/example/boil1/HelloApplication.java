@@ -62,7 +62,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(new Group());
         stage.setTitle("CPM");
         stage.setWidth(500);
-        stage.setHeight(600);
+        stage.setHeight(650);
 
 
         // Create columns
@@ -102,9 +102,6 @@ public class HelloApplication extends Application {
                 String name_n = addName.getText();
                 int cost_n = Integer.parseInt(addCost.getText());
                 String dep_n = addDependencies.getText();
-                System.out.println(name_n);
-                System.out.println(cost_n);
-                System.out.println(dep_n);
                 allTasks.put(name_n, new Task(name_n, cost_n));
                 String[] arrOfStr = dep_n.split(",");
                 for (String s : arrOfStr) {
@@ -112,6 +109,7 @@ public class HelloApplication extends Application {
                 }
                 allTasks.get(name_n).setDep_names();
                 data.add(allTasks.get(name_n));
+                tasks.add(allTasks.get(name_n));
                 addName.clear();
                 addCost.clear();
                 addDependencies.clear();
