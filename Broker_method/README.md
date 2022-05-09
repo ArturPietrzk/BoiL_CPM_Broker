@@ -31,4 +31,4 @@ Zagadnienie pośrednika jest odwróconym zagadnieniem transportowym.
 7. W przypadku jeżeli któraś ze zmiennych kryterialnych będzie miała wartość dodatnią należy wybrać pętlę zmian oraz dokonać na jej podstawie nowego obsadzenia tras i powrócić do punktu 5.
 
 
-
+https://github.com/jonathansamines/transport-methods
