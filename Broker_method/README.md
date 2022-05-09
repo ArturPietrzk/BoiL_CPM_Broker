@@ -1,37 +1,34 @@
-# Projekt zaliczeniowy oparty o metode CPM
+# Projekt zaliczeniowy oparty o metode Pośrednika
 
 
 ## Wstęp teoretyczny
 
-CPM (Critical Path Method czyli metoda ścieżki krytycznej) należy do grupy deterministycznych technik planowania sieciowego. Jej podstawę stanowi budowa szczególnego rodzaju grafu sieciowego (przedstawiającego czynności i zdarzenia składające się na projekt) i dokonywanie wyliczeń na podstawie tego grafu. Dzięki tym wyliczeniem uzyskujemy plan realizacji projektu. Ten specyficzny rodzaj grafu jest określany siecią zależności lub wykresem sieciowym. Sieć ta opiera się na dwupunktowych modelach sieciowych, czyli takich gdzie czynności są reprezentowane za pomocą łuków grafu, a zdarzenia za pomocą węzłów grafu. Metodę ścieżki krytycznej wykorzystuje się do planowania i kontroli projektów, gdzie znana jest technologia i powiązania organizacyjne. Do takich projektów można zaliczyć inwestycje budowlane, remontowe, projekty związane z produkcję jednostkową skomplikowanych wyrobów (np. samolotów).
+Zagadnienie pośrednika jest odwróconym zagadnieniem transportowym.
 
 
-## Jak działa metoda CPM
+## Jak działa metoda Pośrednika
 
-Wiadomo z definicji, że metoda ta umożliwia przedstawienie wieloczynnościowego przedsięwzięcia, zmierzającego do osiagnięcia określonego celu, w sposób graficzny, jako
-zbiór pojedynczych czynności oraz przeprowadzenia jego analizy. 
-Gdzie:
-- Zdarzenie to moment rozpoczęcia lub zakończenia jednej lub większej liczby czynności.
-Graficznie przedstawiane jest za pomocą koła podzielonego na ćwiartki:
-
-![czynnosc](https://user-images.githubusercontent.com/72975469/160156032-7038649a-9a72-4d29-aa26-fa0f64340474.png)
-
-- Czynność to dowolnie wyodrębniony element przedsięwzięcia opisany czasem trwania w ramach którego zużywane są określone środki. Graficznie przedstawiane jest za pomocą strzałki:
-  
-![czynnosc2](https://user-images.githubusercontent.com/72975469/160156482-e6b70ad9-e839-4a2d-9848-055fa0e6b4b8.png)
-  
-- Zdarzają się sytuację, kiedy spotykamy się z czynnością, która nie wymaga zużywania ani czasu ani środków. Taka czynność nazywana jest czynnością pozorną i sluży do przedstawienia zależności między czynnościami:
-
-![czynnosc3](https://user-images.githubusercontent.com/72975469/160157380-7032534f-43da-46cb-9bdb-1fe34e5e00bf.png)
 
 ## Reguły tworzenia sieci
 
-1. Zdarzenie początkowe nie ma czynności poprzedzających,
-2. Zdarzenie końcowe nie ma czynności następujących,
-3. Dwa kolejne zdarzenia mogą być połączone tylko jedną czynnością,
-4. Jeżeli czynność A jest bezpośrednim poprzednikiem czynności B to węzeł końcowy
-(zdarzenie) czynności A staje się węzłem początkowym czynności B,
-5. Jeżeli czynność X ma kilku poprzedników to końcowe węzły (zdarzenia) tych czynności są reprezentowane tylko przez jeden węzeł, który jest węzłem początkowym czynności X.
-6. Jeżeli czynność X jest poprzednikiem dla kilku czynności to końcowy węzeł czynności X jest węzłem początkowym dla tych czynności. 
+1. Wyznaczenie jednostkowego zysku zna poszczególnych trasach od dostawców do odbiorców na podstawie cen sprzedaży c, kosztów zakupu kzoraz kosztów jednostkowych transportu kt.
+
+![1](https://user-images.githubusercontent.com/72975469/167386734-a019d276-81b8-4145-8396-d8a1689e7881.png)
+
+      
+2. Wprowadzenie do tablicy transportowej fikcyjnego dostawcyFD (o podaży równej całkowitemu popytowi) oraz fikcyjnego odbiorcyFO (o popycie równym całkowitej podaży) o jednostkowych zyskach zrównych „0”
+3. W przypadku blokady wybranych dostawców lub odbiorców należy do tablicy wprowadzić odpowiadające im bloki z priorytetem obsadzania tras.
+4. Wyznaczenie pierwszego przybliżenia z wykorzystaniem metody maksymalnego elementu macierzy.
+
+5. Wyznaczenie zmiennych dualnych a i b na podstawie tras bazowych i formuły
+
+![5](https://user-images.githubusercontent.com/72975469/167386720-334e46f6-c95f-4ba6-ac5c-331451b7a252.png)
+       
+6.Wyznaczenie zmiennych kryterialnych dla tras niebazowych na podstawie formuły
+
+![6](https://user-images.githubusercontent.com/72975469/167386709-f901ac29-fa62-4ec7-87e7-83aa36d1a78e.png)
+
+7. W przypadku jeżeli któraś ze zmiennych kryterialnych będzie miała wartość dodatnią należy wybrać pętlę zmian oraz dokonać na jej podstawie nowego obsadzenia tras i powrócić do punktu 5.
+
 
 
