@@ -32,3 +32,4 @@ Zagadnienie pośrednika jest odwróconym zagadnieniem transportowym.
 
 
 https://github.com/jonathansamines/transport-methods
+https://github.com/malinowakrew/posrednik
