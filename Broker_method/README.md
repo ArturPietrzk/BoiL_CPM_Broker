@@ -1,36 +1,19 @@
-# Projekt zaliczeniowy oparty o metode Pośrednika
+# Zagadnieie pośrednika
+Projket realizowany w ramach zajeć z przedmiotu Badania operacyjne i logistyka.
 
+| Kierunek              | Przedmiot            | Semestr | Rok akademicki |Student realizujący projekt|
+| :-------------------: | :-------------------:| :-----: | :------------: |:--------------------------|
+| Informatyka Stosowana | BOiL                 | 6       | 2020/2021      |Adam Żarczyński            |
+| Informatyka Stosowana | BOiL                 | 6       | 2020/2021      |Grzegorz Zelek             |
 
-## Wstęp teoretyczny
+## Zastosowane biblioteki
+* pySIMPLEgui
+* numpy
+* pandas
 
-Zagadnienie pośrednika jest odwróconym zagadnieniem transportowym.
+### Linki 
+<a href="http://tarapata.strefa.pl/p_ekonometria/download/ekonometria_cz3_4.pdf">Zagadnienie transportowe</a>
 
+<a href="https://docplayer.pl/112982574-Rozwiazanie-zadania-1-krok-tym-razem-naszym-celem-jest-nie-tak-jak-w-przypadku-typowego-zadania-transportowego.html">Zagadnienie pośrednika</a>
 
-## Jak działa metoda Pośrednika
-
-
-## Reguły tworzenia sieci
-
-1. Wyznaczenie jednostkowego zysku zna poszczególnych trasach od dostawców do odbiorców na podstawie cen sprzedaży c, kosztów zakupu kzoraz kosztów jednostkowych transportu kt.
-
-![1](https://user-images.githubusercontent.com/72975469/167386734-a019d276-81b8-4145-8396-d8a1689e7881.png)
-
-      
-2. Wprowadzenie do tablicy transportowej fikcyjnego dostawcyFD (o podaży równej całkowitemu popytowi) oraz fikcyjnego odbiorcyFO (o popycie równym całkowitej podaży) o jednostkowych zyskach zrównych „0”
-3. W przypadku blokady wybranych dostawców lub odbiorców należy do tablicy wprowadzić odpowiadające im bloki z priorytetem obsadzania tras.
-4. Wyznaczenie pierwszego przybliżenia z wykorzystaniem metody maksymalnego elementu macierzy.
-
-5. Wyznaczenie zmiennych dualnych a i b na podstawie tras bazowych i formuły
-
-![5](https://user-images.githubusercontent.com/72975469/167386720-334e46f6-c95f-4ba6-ac5c-331451b7a252.png)
-       
-6.Wyznaczenie zmiennych kryterialnych dla tras niebazowych na podstawie formuły
-
-![6](https://user-images.githubusercontent.com/72975469/167386709-f901ac29-fa62-4ec7-87e7-83aa36d1a78e.png)
-
-7. W przypadku jeżeli któraś ze zmiennych kryterialnych będzie miała wartość dodatnią należy wybrać pętlę zmian oraz dokonać na jej podstawie nowego obsadzenia tras i powrócić do punktu 5.
-
-
-https://github.com/jonathansamines/transport-methods
-
-https://github.com/malinowakrew/posrednik
+<a href="https://www.ue.katowice.pl/fileadmin/user_upload/WIiK/katedry/kat-badan-operacyjnych/Materia%C5%82y_dla_student%C3%B3w/160320_Zagadnienie_transportowe_-_zadania.pdf?fbclid=IwAR1hrisNGPJGKF2nZc_TBMK40-RrJjbjM4xlER1iuu3HzoNZStTWnT-NfwU">Zagadnienie transportowe - metoda minimalnego elementu macierzy</a>
